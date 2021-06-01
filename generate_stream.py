@@ -24,7 +24,7 @@ def stream_output(reading_count):
         print(temp_stream[i],',',soc_stream[i])
         time.sleep(1)
         count_readings=count_readings+1
-    end_of_stream=True
+    i==reading_count?(end_of_stream=True):(end_of_stream=False)
     return([end_of_stream,count_readings])
 
 stream_output(no_of_readings_in_stream)
