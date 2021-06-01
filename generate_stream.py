@@ -25,3 +25,4 @@ def stream_output(reading_count):
         time.sleep(1)
         count_readings=count_readings+1
      end_of_stream=True
+     return([end_of_stream,count_readings])
