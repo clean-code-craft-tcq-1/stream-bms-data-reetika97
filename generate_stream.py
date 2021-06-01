@@ -1,6 +1,6 @@
 import random
 import time
-no_of_para = 2
+no_of_readings_in_stream = 10
 
 Battery_parameters_range= {'temperature':[0,45], 'soc':[20,80]}
 #Battery_parameters =['temperature', 'soc'] 
@@ -26,3 +26,5 @@ def stream_output(reading_count):
         count_readings=count_readings+1
     end_of_stream=True
     return([end_of_stream,count_readings])
+
+stream_output(no_of_readings_in_stream)
