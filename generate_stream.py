@@ -32,7 +32,8 @@ def stream_output(reading_count):
         count_readings=count_readings+1
         
     #to test end of display
-    i==reading_count?(end_of_stream=True):(end_of_stream=False)
+    if i==reading_count:
+        end_of_stream=True
     return([end_of_stream,count_readings])
 
 stream_output(no_of_readings_in_stream)
