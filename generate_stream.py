@@ -17,7 +17,11 @@ def generate_param_stream(reading_count):
     return ([temp_stream,soc_stream])
 
 def stream_output(reading_count):
+    count_readings=0
+    end_of_stream=False
     [temp_stream,soc_stream]=generate_param_stream(reading_count)
     for i in range(0,reading_count):
         print(temp_stream[i],',',soc_stream[i])
         time.sleep(1)
+        count_readings=count_readings+1
+     end_of_stream=True
